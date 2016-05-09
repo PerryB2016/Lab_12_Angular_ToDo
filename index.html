@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html ng-app="myModule">
+			<head>
+      	<title></title>
+				<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+      	<script type = "text/javascript" src = "module.js"></script>
+			</head>
+			<body>
+        <h2>Todo List</h2>
+      	<div ng-app="myModule" ng-controller="myController">
+      		<ul>
+        		<li ng-repeat="toDo in toDos">{{toDo}}</li>
+						<li class="my-module"></li>
+      		</ul>
+					<form>
+						<input type="text" ng-model="formTodoText"/>
+						<button type="button" ng-click="addTodo()">ADD</button>
+    			</form>
+    		</div>
+    	</body>
+  	</html>
